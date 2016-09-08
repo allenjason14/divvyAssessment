@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --content-base build --hot --inline"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +19,11 @@
     "webpack-dev-server": "^1.15.1"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "fast-csv": "^2.1.0",
+    "mongoose": "^4.6.0",
     "webpack": "^1.13.2"
-  },
-  "scripts": {
-        "start": "webpack-dev-server --content-base build --hot --inline"
   }
 }
